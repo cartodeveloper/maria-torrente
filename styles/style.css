@@ -3,7 +3,13 @@
 }
 
 /* nav style */
-
+nav img {
+  width: 100px;
+  margin: 10px;
+}
+nav img a {
+  display: inline-flex;
+}
 .navBar-links {
   height: 100%;
 }
@@ -31,7 +37,6 @@
   text-decoration: none;
   color: #89059b;
   padding: 8px;
-  font-size: 20px;
 }
 
 .navBar-links li:hover {
@@ -55,4 +60,37 @@
   width: 100%;
   background-color: purple;
   border-radius: 20px;
+}
+
+/* Rule for my nav -Ham menu */
+@media (max-width: 700px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hamIcon {
+    display: flex;
+  }
+
+  .navBar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navBar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navBar-links ul li {
+    text-align: center;
+  }
+
+  .navBar-links ul li a {
+    padding: 8px 7px;
+  }
+
+  .navBar-links.active {
+    display: flex;
+  }
 }
