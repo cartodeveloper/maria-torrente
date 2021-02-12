@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
 * {
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
 /* nav style */
 nav img {
   width: 100px;
@@ -34,19 +41,23 @@ nav img a {
 
 .navBar-links li a {
   display: block;
+  background-color: #dd0042;
+  border-radius: 3px;
+  margin: 10px;
   text-decoration: none;
-  color: #89059b;
+  color: white;
   padding: 8px;
 }
 
 .navBar-links li:hover {
-  color: #9a07b8;
+  background-color: pink;
+  border-radius: 3px;
   font-weight: bold;
 }
 
 .hamIcon {
   position: absolute;
-  top: 19px;
+  top: 30px;
   right: 9px;
   display: none;
   flex-direction: column;
@@ -58,7 +69,7 @@ nav img a {
 .hamIcon .line {
   height: 3px;
   width: 100%;
-  background-color: purple;
+  background-color: #dd0042;
   border-radius: 20px;
 }
 
