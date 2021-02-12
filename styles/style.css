@@ -8,6 +8,21 @@ body {
   padding: 0;
   background-color: black;
   color: white;
+  text-align: center;
+}
+h1,
+.centered p {
+  font-size: 40px;
+  background-color: black;
+  padding: 3%;
+  border-radius: 6px;
+  width: max-content;
+}
+.centered p {
+  font-size: 15px;
+  background-color: pink;
+  color: black;
+  padding: 1%;
 }
 /* nav style */
 nav img {
@@ -41,7 +56,7 @@ nav img a {
 
 .navBar-links li a {
   display: block;
-  background-color: #dd0042;
+  background-color: #ff008a;
   border-radius: 3px;
   margin: 10px;
   text-decoration: none;
@@ -69,8 +84,41 @@ nav img a {
 .hamIcon .line {
   height: 3px;
   width: 100%;
-  background-color: #dd0042;
+  background-color: #ff008a;
   border-radius: 20px;
+}
+/* Home */
+.home {
+  width: 100%;
+  opacity: 60%;
+  height: 600px;
+}
+.home:hover {
+  opacity: 100%;
+}
+.container {
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+.white h2 {
+  background-color: #ff008a;
+  border-radius: 3px;
+  color: white;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Rule for my nav -Ham menu */
