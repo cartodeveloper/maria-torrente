@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+/* nav style */
+
+.navBar-links {
+  height: 100%;
+}
+
+.navBar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar-links ul {
+  cursor: pointer;
+  display: flex;
+  margin: 8px;
+  padding: 0;
+}
+
+.navBar-links li {
+  list-style: none;
+}
+
+.navBar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #89059b;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.navBar-links li:hover {
+  color: #9a07b8;
+  font-weight: bold;
+}
+
+.hamIcon {
+  position: absolute;
+  top: 19px;
+  right: 9px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 21px;
+}
+
+.hamIcon .line {
+  height: 3px;
+  width: 100%;
+  background-color: purple;
+  border-radius: 20px;
+}
