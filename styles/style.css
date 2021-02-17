@@ -1,28 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap");
 * {
   box-sizing: border-box;
+}
+nav {
+  background-color: black;
 }
 body {
   font-family: "Quicksand";
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
   text-align: center;
 }
 h1,
 .centered p {
-  font-size: 40px;
-  background-color: black;
-  padding: 3%;
+  font-size: 60px;
   border-radius: 6px;
   width: max-content;
 }
+
+h1 {
+  font-family: "Dr Sugiyama";
+}
+
+@keyframes myname {
+  0% {
+    background-color: rgb(250, 250, 250);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: pink;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: black;
+    left: 200px;
+    top: 200px;
+  }
+}
+
+.container img {
+  background-color: white;
+  animation-name: myname;
+  animation-duration: 4s;
+}
+
 .centered p {
   font-size: 15px;
-  background-color: pink;
-  color: black;
-  padding: 1%;
+  background-color: black;
+  color: white;
+  padding: 2%;
 }
 /* nav style */
 nav img {
@@ -151,5 +180,11 @@ nav img a {
 
   .navBar-links.active {
     display: flex;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 90px;
   }
 }
