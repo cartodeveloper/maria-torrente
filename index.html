@@ -14,7 +14,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@300&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- my nav bar with a responsive HamIcon -->
@@ -28,60 +33,79 @@
       <div class="navBar-links">
         <ul>
           <li>
-            <a href="#"><i class="fas fa-home"> </i> Home</a>
+            <a href="#aboutme"><i class="fas fa-home"> </i> About</a>
           </li>
           <li>
-            <a href="./scripts/projects.html"
-              ><i class="fas fa-code"></i> Projects</a
-            >
+            <a href="#projects"><i class="fas fa-code"></i> Projects</a>
           </li>
           <li>
-            <a href="./scripts/contact.html"
-              ><i class="fas fa-envelope"></i> Contact</a
-            >
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <main>
-      <section class="container">
-        <img class="home" src="./media/27.png" alt="banner" />
+      <section id="banner" class="container">
+        <img src="./media/banner.png" alt="banner" class="image" />
         <div class="centered">
-          <div class="container2">
-            <img src="./media/banner.png" alt="yo" class="image" />
-            <div class="overlay">
-              <div class="text">
-                <p>Hello World(), I'm...</p>
-                María Torrente
-              </div>
-            </div>
+          <h2>
+            "Innovation is the ability to see change as an opportunity - not as
+            a threat."
+          </h2>
+          <h4><i> - Steve Jobs</i></h4>
+        </div>
+      </section>
+      <section id="aboutme">
+        <div class="intro">
+          <h2>About Me</h2>
+          <p>
+            Hey there! I'm María Torrente A tech lover, who believes that
+            programming is a powerful tool to create and innovate improving the
+            lives of people around the world.
+          </p>
+        </div>
+        <hr />
+        <div class="flex">
+          <div class="group" id="my-image">
+            <img
+              src="./media/maria-torrente.png"
+              alt="my_image"
+              class="image"
+            />
+          </div>
+          <div class="group" id="text">
+            <p>
+              I'm a passionate creator: [musician, sommelier, software
+              engineer], who finds sophisticated solutions to complex problems,
+              creating relevant products that inspire and engage with people.
+            </p>
+
+            <p>
+              After dragging and dropping small pieces of code for pure
+              fascination, now I'm a Full Stack JavaScript developer with
+              experience wireframing and prototyping, builing accessible,
+              functional and creative websites and applications using the Agile
+              Methodology.
+            </p>
+            <p>
+              The constant learning and the understanding of what happens behind
+              scenes, makes coding a beautiful adventure.
+            </p>
+
+            <h3>
+              const maria ={ purpose : clean logic, enjoy: unique designs,
+              imperatives: [gratitude, courage, discipline, determination]}
+            </h3>
+            <p>
+              When I have free time you can probably find me tasting new wines,
+              beers, or spirits while listening to some violin and orchestra
+              concert or jazz.
+            </p>
           </div>
         </div>
       </section>
-      <section class="white" id="aboutme">
-        <h2>About Me</h2>
-        <p>
-          Passionate musician, sommelier and tech lover, who believes that
-          programming is a powerful tool to create and innovate improving the
-          lives of people around the world.
-        </p>
-        <p>
-          A faithful believer in open sources projects, so ...let's connect and
-          make ideas a tangible reality!
-        </p>
-        <p>
-          After dragging and dropping small pieces of code for pure fascination,
-          now I'm officialy a Thinkful student and I can't express how happy and
-          excited am I for the journey that awaits me.
-        </p>
-        <p>
-          If you're looking to hire a new developer, to meet a new code friend
-          or simply to talk about music/wines please don't hesitate and reach
-          out!
-        </p>
-      </section>
     </main>
     <footer>© María Torrente</footer>
-    <script src="./scripts/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

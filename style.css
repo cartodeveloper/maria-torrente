@@ -1,0 +1,236 @@
+/* Styles */
+* {
+  box-sizing: border-box;
+}
+nav,
+footer {
+  background-color: white;
+  font-family: "Noto Sans JP";
+}
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1 {
+  margin-left: 15px;
+  padding: 10px;
+  font-weight: bolder;
+}
+h2 {
+  font-family: "Noto Sans JP";
+}
+h1:hover {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Common */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.group {
+  flex: 1;
+  margin: 20px;
+  padding: 10px;
+}
+.group img {
+  width: 100%;
+}
+/* Horizontal ruler */
+hr {
+  width: 100px;
+}
+/* Nav style */
+nav img {
+  width: 100px;
+  margin: 10px;
+}
+nav img a {
+  display: inline-flex;
+}
+.navBar-links {
+  height: 100%;
+}
+
+.navBar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar-links ul {
+  cursor: pointer;
+  display: flex;
+  margin: 8px;
+  padding: 0;
+}
+
+.navBar-links li {
+  list-style: none;
+}
+
+.navBar-links li a {
+  display: block;
+  border: 2px solid black;
+  color: black;
+  border-radius: 3px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.navBar-links li:hover {
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navBar-links li a:hover {
+  border: 2px solid #ff008a;
+  box-shadow: 3px 7px 1px #ff008a;
+  color: black;
+}
+
+.hamIcon {
+  position: absolute;
+  top: 30px;
+  right: 9px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 21px;
+}
+
+.hamIcon .line {
+  height: 3px;
+  width: 100%;
+  background-color: #ff008a;
+  border-radius: 20px;
+}
+
+/* Rule for my nav -Ham menu */
+@media (max-width: 700px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hamIcon {
+    display: flex;
+  }
+
+  .navBar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navBar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navBar-links ul li {
+    text-align: center;
+  }
+
+  .navBar-links ul li a {
+    padding: 8px 7px;
+  }
+
+  .navBar-links.active {
+    display: flex;
+  }
+}
+
+/* Banner */
+.container img {
+  background-color: white;
+  animation-name: myname;
+  animation-duration: 4s;
+  width: 100%;
+  opacity: 80%;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+@keyframes myname {
+  0% {
+    background-color: rgb(250, 250, 250);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: black;
+    left: 200px;
+    top: 200px;
+  }
+  50% {
+    background-color: rgb(250, 250, 250);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Centered Text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+.centered h2 {
+  font-size: 18px;
+  font-family: "Bad Script";
+  font-weight: lighter;
+}
+.centered h4 {
+  font-family: "Bad Script";
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+/* About Me */
+#my-image img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+#text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.intro {
+  margin: 40px;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+
+  .centered h2 {
+    font-size: 60px;
+  }
+  .centered h4 {
+    font-size: 30px;
+  }
+  .flex {
+    flex-direction: row;
+  }
+  #my-image img {
+    width: 500px;
+  }
+}
