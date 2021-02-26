@@ -23,12 +23,6 @@ h2 {
   font-family: "Noto Sans JP";
   text-shadow: 1px 2px #555555;
 }
-h1:hover {
-  background-color: black;
-  cursor: pointer;
-  border-radius: 5px;
-  color: white;
-}
 
 p {
   font-size: 18px;
@@ -97,10 +91,13 @@ nav img a {
   font-size: 20px;
   font-weight: bold;
 }
-.navBar-links li a:hover {
+.navBar-links li a:hover,
+h1:hover {
   border: 2px solid #ff008a;
   box-shadow: 3px 7px 1px #ff008a;
+  text-shadow: 1px 1px #555555;
   color: black;
+  cursor: pointer;
 }
 
 .hamIcon {
@@ -209,6 +206,7 @@ nav img a {
 #my-image img {
   border-radius: 50%;
   width: 300px;
+  margin-top: 50px;
 }
 
 #text {
@@ -228,12 +226,12 @@ nav img a {
 }
 
 /* Porfolio */
-#projects section {
+#portfolio section {
   min-height: 200px;
   padding: 30px 15px;
   background-color: white;
 }
-#projects section:nth-child(even) {
+#portfolio section:nth-child(even) {
   background-color: #ff008a;
   color: white;
 }
@@ -242,7 +240,7 @@ nav img a {
   font-size: 35px;
 }
 
-#projects h3 {
+#portfolio h3 {
   padding: 10px;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -268,8 +266,8 @@ nav img a {
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+.dot,
+.dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -280,8 +278,9 @@ nav img a {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active #dots,
+.dot:hover,
+.dot2 {
   background-color: #717171;
 }
 
