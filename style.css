@@ -13,35 +13,51 @@ body {
   padding: 0;
   text-align: center;
 }
+
 h1 {
   margin-left: 15px;
   padding: 10px;
   font-weight: bolder;
   text-shadow: 1px 2px #555555;
 }
+
+/* Commons */
 h2 {
   font-family: "Noto Sans JP";
   text-shadow: 1px 2px #555555;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 18px;
 }
 
-/* Common */
 .flex {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
 .group {
   flex: 1;
-  margin: 20px;
-  padding: 10px;
+  margin: auto;
+  padding: 3px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 5px;
 }
 .group img {
   width: 100%;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 1px;
 }
+
 /* Horizontal ruler */
 hr {
   width: 100px;
@@ -194,6 +210,7 @@ h1:hover {
   font-family: "Bad Script";
   font-weight: lighter;
   text-shadow: none;
+  text-transform: none;
 }
 .centered h4 {
   font-family: "Bad Script";
@@ -214,15 +231,20 @@ h1:hover {
   text-justify: inter-word;
 }
 #aboutme h2 {
-  text-shadow: 1px 2px #555555;
+  text-shadow: 1px 2px #817878;
 }
 .intro {
   margin: 40px;
+}
+.intro h2,
+.phrase h2 {
+  text-transform: none;
 }
 .phrase {
   padding: 3px;
   background-color: #ff008a;
   color: white;
+  margin: 30px 0 30px 0;
 }
 
 /* Porfolio */
@@ -231,7 +253,8 @@ h1:hover {
   padding: 30px 15px;
   background-color: white;
 }
-#portfolio section:nth-child(even) {
+#portfolio section:nth-child(even),
+#portfolio .group a:hover {
   background-color: #ff008a;
   color: white;
 }
@@ -255,8 +278,7 @@ h1:hover {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -265,9 +287,13 @@ h1:hover {
   color: black;
   text-align: center;
 }
+.mySlides2 .text {
+  color: white;
+}
 
 .dot,
-.dot2 {
+.dots2,
+.dots3 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -279,8 +305,11 @@ h1:hover {
 }
 
 .active #dots,
-.dot:hover,
-.dot2 {
+.active #dots2,
+.dots:hover,
+.dots2:hover,
+.dots3:hover,
+.active #dots3 {
   background-color: #717171;
 }
 
@@ -310,6 +339,25 @@ h1:hover {
   }
 }
 
+#portfolio .group a {
+  color: #ff008a;
+  text-decoration: none;
+  font-weight: bolder;
+  border: 2px solid #ff008a;
+  padding: 6px;
+}
+#portfolio #white a {
+  color: white;
+  border: 2px solid white;
+}
+#portfolio #white a:hover {
+  background-color: white;
+  color: #ff008a;
+}
+#portfolio #links {
+  margin: 30px;
+}
+
 /* Desktop */
 @media (min-width: 800px) {
   h1 {
@@ -318,7 +366,8 @@ h1:hover {
   h2 {
     font-size: 35px;
   }
-  p {
+  p,
+  a {
     font-size: 25px;
     padding: 3px;
   }
