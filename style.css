@@ -226,6 +226,91 @@ nav img a {
   background-color: #ff008a;
   color: white;
 }
+
+/* Porfolio */
+#projects section {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color: white;
+}
+#projects section:nth-child(even) {
+  background-color: #ff008a;
+  color: white;
+}
+
+.group #apptitle {
+  font-size: 35px;
+}
+
+#projects h3 {
+  padding: 10px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Desktop */
 @media (min-width: 800px) {
   h1 {
