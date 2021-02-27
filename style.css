@@ -48,11 +48,13 @@ p {
 }
 .group {
   flex: 1;
-  margin: auto;
   padding: 3px;
+  margin-left: 5px;
+}
+
+.group p {
   text-align: justify;
   text-justify: inter-word;
-  margin-left: 5px;
 }
 .group img {
   width: 100%;
@@ -562,5 +564,8 @@ footer {
   #app-description3,
   #app-description4 {
     font-size: 30px;
+  }
+  .navBar-links li a {
+    font-size: 20px;
   }
 }
