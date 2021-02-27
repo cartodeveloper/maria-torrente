@@ -58,10 +58,12 @@ p {
   border-radius: 5px;
   padding: 1px;
 }
-#white-border {
+#white-border,
+#white-border2 {
   border: 2px solid white;
 }
-#rose {
+#rose,
+#rose2 {
   margin: 30px;
 }
 /* Horizontal ruler */
@@ -273,7 +275,10 @@ footer {
   font-size: 29px;
 }
 
-.group #apptitle {
+.group #apptitle,
+#apptitle2,
+#apptitle3,
+#apptitle4 {
   font-size: 40px;
 }
 
@@ -358,23 +363,32 @@ footer {
 }
 
 #portfolio .group a,
-#services a {
+#services a,
+#github-link {
   text-decoration: none;
   font-weight: bolder;
   border: 2px solid #ff008a;
   padding: 6px;
+  color: black;
+  text-transform: uppercase;
 }
-#portfolio #white a {
+#github-link img {
+  width: 30px;
+}
+#portfolio #white a,
+#portfolio #white2 a {
   color: white;
   border: 2px solid white;
 }
-#portfolio #white a:hover {
+#portfolio #white a:hover,
+#portfolio #white2 a:hover {
   background-color: white;
   color: #ff008a;
 }
 #services a:hover,
 #contact button:hover,
-button[type="submit"] {
+button[type="submit"],
+#github-link:hover {
   background-color: #ff008a;
   color: white;
 }
@@ -392,7 +406,9 @@ button[type="submit"]:hover {
 }
 
 .group2 .group #white,
-#portfolio #links {
+.group #white2,
+#portfolio #links,
+#portfolio #links2 {
   margin: 35px;
 }
 #contact img {
@@ -527,7 +543,9 @@ footer {
     height: auto;
   }
   .group #white,
-  #portfolio #links {
+  .group #white2,
+  #portfolio #links,
+  #portfolio #links2 {
     margin: 90px;
   }
   #tech-tools .flex-row {
@@ -537,7 +555,10 @@ footer {
     margin: 35px;
     width: 55%;
   }
-  #app-description {
+  #app-description,
+  #app-description2,
+  #app-description3,
+  #app-description4 {
     font-size: 30px;
   }
 }
