@@ -53,6 +53,7 @@ function showSlides2(slide2) {
   let i;
   let slides2 = document.getElementsByClassName("mySlides2");
   let dots2 = document.getElementsByClassName("dots2");
+
   if (slide2 > slides2.length) {
     slideIndex2 = 1;
   }
@@ -97,4 +98,34 @@ function showSlides3(slide3) {
   }
   slides3[slideIndex3 - 1].style.display = "block";
   dots3[slideIndex3 - 1].className += " active";
+}
+/* Slider4*/
+let slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+function plusSlides4(n) {
+  showSlides4((slideIndex4 += n));
+}
+
+function currentSlide4(n) {
+  showSlides4((slideIndex4 = n));
+}
+function showSlides4(slide4) {
+  let i;
+  let slides4 = document.getElementsByClassName("mySlides4");
+  let dots4 = document.getElementsByClassName("dots4");
+  if (slide4 > slides4.length) {
+    slideIndex4 = 1;
+  }
+  if (slide4 < 1) {
+    slideIndex4 = slides4.length;
+  }
+  for (i = 0; i < slides4.length; i++) {
+    slides4[i].style.display = "none";
+  }
+  for (i = 0; i < dots4.length; i++) {
+    dots4[i].className = dots4[i].className.replace(" active", "");
+  }
+  slides4[slideIndex4 - 1].style.display = "block";
+  dots4[slideIndex4 - 1].className += " active";
 }

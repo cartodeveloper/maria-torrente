@@ -30,6 +30,7 @@ h2 {
 
 p {
   font-size: 18px;
+  padding: 15px;
 }
 
 .flex {
@@ -118,7 +119,7 @@ h1:hover {
 
 .hamIcon {
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 9px;
   display: none;
   flex-direction: column;
@@ -174,6 +175,7 @@ h1:hover {
   animation-duration: 4s;
   width: 100%;
   opacity: 80%;
+  height: 500px;
 }
 .container {
   position: relative;
@@ -253,7 +255,7 @@ h1:hover {
   padding: 30px 15px;
   background-color: white;
 }
-#portfolio section:nth-child(even),
+#portfolio section:nth-child(odd),
 #portfolio .group a:hover {
   background-color: #ff008a;
   color: white;
@@ -287,13 +289,15 @@ h1:hover {
   color: black;
   text-align: center;
 }
-.mySlides2 .text {
+.mySlides2 .text,
+.mySlides4 .text {
   color: white;
 }
 
 .dot,
 .dots2,
-.dots3 {
+.dots3,
+.dots4 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -309,7 +313,9 @@ h1:hover {
 .dots:hover,
 .dots2:hover,
 .dots3:hover,
-.active #dots3 {
+.active #dots4,
+.dots4:hover,
+.active #dots4 {
   background-color: #717171;
 }
 
@@ -354,8 +360,10 @@ h1:hover {
   background-color: white;
   color: #ff008a;
 }
+
+.group #white,
 #portfolio #links {
-  margin: 30px;
+  margin: 35px;
 }
 
 /* Desktop */
@@ -383,5 +391,8 @@ h1:hover {
   }
   #my-image img {
     width: 500px;
+  }
+  .container img {
+    height: auto;
   }
 }
