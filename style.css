@@ -26,10 +26,11 @@ h2 {
   font-family: "Noto Sans JP";
   text-shadow: 1px 2px #555555;
   text-transform: uppercase;
+  font-size: 35px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 25px;
   padding: 15px;
 }
 
@@ -55,8 +56,10 @@ p {
 .group img {
   width: 100%;
   border-radius: 5px;
-  border: 2px solid white;
   padding: 1px;
+}
+#white-border {
+  border: 2px solid white;
 }
 
 /* Horizontal ruler */
@@ -115,6 +118,9 @@ h1:hover {
   text-shadow: 1px 1px #555555;
   color: black;
   cursor: pointer;
+}
+.navBar-links li a:hover {
+  font-size: 30px;
 }
 
 .hamIcon {
@@ -239,10 +245,11 @@ h1:hover {
   margin: 40px;
 }
 .intro h2,
-.phrase h2 {
+.objectme h2 {
   text-transform: none;
 }
-.phrase {
+.objectme,
+footer {
   padding: 3px;
   background-color: #ff008a;
   color: white;
@@ -260,9 +267,12 @@ h1:hover {
   background-color: #ff008a;
   color: white;
 }
+.group a:hover {
+  font-size: 29px;
+}
 
 .group #apptitle {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 #portfolio h3 {
@@ -361,18 +371,113 @@ h1:hover {
   color: #ff008a;
 }
 
-.group #white,
+.group2 .group #white,
 #portfolio #links {
   margin: 35px;
 }
+#contact img {
+  width: 50px;
+}
+#contact .flex {
+  justify-content: center;
+  text-align: none;
+}
+/* Tech Stack */
 
+.tech-tools {
+  margin: 30px;
+}
+
+#tech-tools .flex-row {
+  flex-direction: column;
+}
+#tech-tools .flex-row .group {
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+#tech-tools .flex-row img {
+  width: 70px;
+  margin: 15px;
+}
+
+/*Services Provided */
+ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bolder;
+}
+/* Contact */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #ff008a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 3px 6px black;
+}
+
+label,
+button,
+legend {
+  text-transform: uppercase;
+}
+button {
+  font-size: 30px;
+}
+
+#contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+fieldset {
+  padding: 40px;
+  margin: 30px;
+}
+#contact .group2 {
+  flex: 1;
+}
+legend {
+  font-weight: bolder;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  margin: 0;
+  padding: 8px;
+}
+.footer2 {
+  visibility: hidden;
+}
 /* Desktop */
 @media (min-width: 800px) {
   h1 {
     font-size: 70px;
   }
   h2 {
-    font-size: 35px;
+    font-size: 45px;
   }
   p,
   a {
@@ -394,5 +499,19 @@ h1:hover {
   }
   .container img {
     height: auto;
+  }
+  .group #white,
+  #portfolio #links {
+    margin: 90px;
+  }
+  #tech-tools .flex-row {
+    flex-direction: row;
+  }
+  #tech-tools .flex-row img {
+    margin: 35px;
+    width: 55%;
+  }
+  #app-description {
+    font-size: 30px;
   }
 }
