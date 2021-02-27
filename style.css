@@ -61,7 +61,9 @@ p {
 #white-border {
   border: 2px solid white;
 }
-
+#rose {
+  margin: 30px;
+}
 /* Horizontal ruler */
 hr {
   width: 100px;
@@ -355,8 +357,8 @@ footer {
   }
 }
 
-#portfolio .group a {
-  color: #ff008a;
+#portfolio .group a,
+#services a {
   text-decoration: none;
   font-weight: bolder;
   border: 2px solid #ff008a;
@@ -370,6 +372,24 @@ footer {
   background-color: white;
   color: #ff008a;
 }
+#services a:hover,
+#contact button:hover,
+button[type="submit"] {
+  background-color: #ff008a;
+  color: white;
+}
+
+#services a {
+  color: #ff008a;
+}
+#services a:hover {
+  font-size: 30px;
+}
+button[type="submit"]:hover {
+  font-size: 40px;
+  box-shadow: 2px 6px black;
+  font-weight: bolder;
+}
 
 .group2 .group #white,
 #portfolio #links {
@@ -377,6 +397,9 @@ footer {
 }
 #contact img {
   width: 50px;
+}
+#contact img:hover {
+  width: 53%;
 }
 #contact .flex {
   justify-content: center;
@@ -403,13 +426,21 @@ footer {
 }
 
 /*Services Provided */
-ul li {
+#services ul li {
   list-style: none;
   padding: 10px;
+  margin: 25px;
   font-size: 22px;
   font-weight: bolder;
 }
+
+.resume {
+  margin: 30px;
+}
 /* Contact */
+#contact .flex {
+  flex-direction: row;
+}
 input[type="text"],
 textarea {
   width: 100%;
@@ -423,17 +454,10 @@ textarea {
 
 button[type="submit"] {
   width: 100%;
-  background-color: #ff008a;
-  color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  box-shadow: 3px 6px black;
 }
 
 label,
@@ -466,7 +490,7 @@ legend {
 footer {
   margin-top: 30px;
   margin: 0;
-  padding: 8px;
+  padding: 15px;
 }
 .footer2 {
   visibility: hidden;
@@ -480,7 +504,9 @@ footer {
     font-size: 45px;
   }
   p,
-  a {
+  a,
+  legend,
+  label {
     font-size: 25px;
     padding: 3px;
   }
